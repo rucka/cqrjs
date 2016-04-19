@@ -1,5 +1,6 @@
 var Cqrjs = require('../main.js');
 var _ = require('underscore');
+_.str = require('underscore.string');
 var Q = require('q');
 
 this.LoadModule = (function () {

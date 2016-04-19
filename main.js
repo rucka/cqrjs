@@ -1,5 +1,8 @@
 "use strict";
-//require('mdcore');
+require('mdcore');
+require('joeventstore');
+var pkg = require('./package.json');
+
 var requireJs = require('requirejs');
 
 requireJs.config({
@@ -8,3 +11,4 @@ requireJs.config({
 });
 
 module.exports = requireJs('loader');
+module.exports.package = pkg;
